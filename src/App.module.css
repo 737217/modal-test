@@ -1,24 +1,53 @@
+:global body {
+    font-family: 'Amatic SC', cursive;
+}
+
+:global button {
+    font-family: 'Amatic SC', cursive;
+}
+
 .app {
     min-height: 100vh;
     display: flex;
-    justify-content: center;
     align-items: center;
     font-size: calc(10px + 2vmin);
     color: white;
 }
 
-.controlButtons button:first-child {
+.controlButtons {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.buttonWrapper {
+    border: 1px solid #aaa;
+    padding: 40px;
+    width: 30%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.buttonWrapperTitle {
+    color: #000;
+    font-size: 3rem;
+    margin-bottom: 20px;
+}
+
+.controlButtons .buttonWrapper:first-child {
     margin-right: 20px;
 }
 
 .controlButtons button {
-    font-size: 30px;
+    font-size: 1.5rem;
     background: none;
-    border: none;
-    padding: 20px;
-    border: 1px solid #aaa;
+    padding: 10px 20px;
+    border: 2px solid rgba(170, 170, 170, 0.3);
     border-radius: 8px;
-    background: #fff;
+    /* background: #fff; */
     cursor: pointer;
     outline: none;
+    /* width: 30%; */
 }

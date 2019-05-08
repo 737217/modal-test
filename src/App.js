@@ -20,8 +20,14 @@ export class App extends Component {
     return (
       <div className={styles.app}>
         <div className={ styles.controlButtons }>
-          <button className={ styles.helloButton } onClick={() => this.handleClick(true, 'Hello')}>Привет</button>
-          <button className={ styles.byeButton } onClick={() => this.handleClick(true, 'Bye Bye')}>Пока</button>
+          <div className={styles.buttonWrapper}>
+            <div className={styles.buttonWrapperTitle}>Привет</div>
+            <button className={ styles.helloButton } onClick={() => this.handleClick(true, 'Hello')}>Нажать</button>
+          </div>
+          <div className={styles.buttonWrapper}>
+            <div className={styles.buttonWrapperTitle}>Пока</div>
+            <button className={ styles.byeButton } onClick={() => this.handleClick(true, 'Bye Bye')}>Нажать</button>
+          </div>
         </div>
         <Modal
           fun={this.handleClick}

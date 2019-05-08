@@ -24,10 +24,11 @@
 
 .modalContent {
     margin-bottom: 20px;
+    font-size: 4rem;
 }
 
 .closeButton {
-    font-size: 14px;
+    font-size: 1rem;
 }
 
 @keyframes show-animation {
