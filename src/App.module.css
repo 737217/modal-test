@@ -1,0 +1,24 @@
+.app {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: calc(10px + 2vmin);
+    color: white;
+}
+
+.controlButtons button:first-child {
+    margin-right: 20px;
+}
+
+.controlButtons button {
+    font-size: 30px;
+    background: none;
+    border: none;
+    padding: 20px;
+    border: 1px solid #aaa;
+    border-radius: 8px;
+    background: #fff;
+    cursor: pointer;
+    outline: none;
+}
